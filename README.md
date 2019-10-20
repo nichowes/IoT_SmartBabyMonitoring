@@ -8,4 +8,4 @@ Tri Nhan 101023872
 Nic Howes 100997499
 
 Note for Developers:
-PLEASE push to the 'develop' branch only, never the master branch. 
+PLEASE push to the 'development' branch only, never the master branch. 
