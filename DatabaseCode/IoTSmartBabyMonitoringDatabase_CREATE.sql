@@ -1,8 +1,5 @@
--- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2019-10-26 19:44:32.445
+-- IoT Smart Baby Monitoring SQL Create Schema Code
 
--- tables
--- Table: BABY_ANALYSIS
 CREATE TABLE BABY_ANALYSIS (
     id int NOT NULL,
     babyName varchar(255) NOT NULL,
@@ -19,7 +16,6 @@ CREATE TABLE BABY_ANALYSIS (
     CONSTRAINT BABY_ANALYSIS_pk PRIMARY KEY (id)
 ) COMMENT 'All information relating to the baby analysis.';
 
--- Table: BABY_CALM_METHODS
 CREATE TABLE BABY_CALM_METHODS (
     id int NOT NULL,
     name varchar(255) NOT NULL,
@@ -29,7 +25,6 @@ CREATE TABLE BABY_CALM_METHODS (
     CONSTRAINT BABY_CALM_METHODS_pk PRIMARY KEY (id)
 ) COMMENT 'All the methods the system uses to ';
 
--- Table: GENERAL_DATA_AND_SETTINGS
 CREATE TABLE GENERAL_DATA_AND_SETTINGS (
     id int NOT NULL,
     userName varchar(255) NOT NULL,
@@ -38,7 +33,6 @@ CREATE TABLE GENERAL_DATA_AND_SETTINGS (
     CONSTRAINT GENERAL_DATA_AND_SETTINGS_pk PRIMARY KEY (id)
 ) COMMENT 'All general information relating to the system and its users.';
 
--- Table: SENSOR_DATA
 CREATE TABLE SENSOR_DATA (
     id int NOT NULL,
     timestamp timestamp NOT NULL,
@@ -47,7 +41,7 @@ CREATE TABLE SENSOR_DATA (
     CONSTRAINT SENSOR_DATA_pk PRIMARY KEY (id)
 );
 
--- foreign keys
+-- Foreign Keys
 -- Reference: BABY_ANALYSIS_BABY_CALM_METHODS (table: BABY_ANALYSIS)
 ALTER TABLE BABY_ANALYSIS ADD CONSTRAINT BABY_ANALYSIS_BABY_CALM_METHODS FOREIGN KEY BABY_ANALYSIS_BABY_CALM_METHODS (favouriteDayTimeCalmDownMethod)
     REFERENCES BABY_CALM_METHODS (id);
@@ -55,6 +49,3 @@ ALTER TABLE BABY_ANALYSIS ADD CONSTRAINT BABY_ANALYSIS_BABY_CALM_METHODS FOREIGN
 -- Reference: favouriteNightTimeCalmDownMethod (table: BABY_ANALYSIS)
 ALTER TABLE BABY_ANALYSIS ADD CONSTRAINT favouriteNightTimeCalmDownMethod FOREIGN KEY favouriteNightTimeCalmDownMethod (favouriteNightTimeCalmDownMethod)
     REFERENCES BABY_CALM_METHODS (id);
-
--- End of file.
-
