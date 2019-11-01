@@ -1,0 +1,12 @@
+SAMY:
+-Hibernate MySQL Set Up (Python)
+-Android App Start (connect to the database)
+
+NICK:
+-Camera (both cameras) - Python Open CV
+-Microphone - C (Python)
+
+TRI:
+-Android App (Strart building - look, pages...)
+-Thermal Sensor - C (Python)
+
