@@ -1,0 +1,9 @@
+runtime: python37
+
+# Remember - storing secrets in plaintext is potentially unsafe. Consider using
+# something like https://cloud.google.com/kms/ to help keep secrets secret.
+env_variables:
+  CLOUD_SQL_CONNECTION_NAME: iotsmartbabymonitoringcloud:us-east1:iot-smartbaby-monitoring
+  DB_USER: samyibrahim
+  DB_PASS: samizosan
+  DB_NAME: IOT_SMART_BABY_MONITORING
