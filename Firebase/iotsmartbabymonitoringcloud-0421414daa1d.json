@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "iotsmartbabymonitoringcloud",
+  "private_key_id": "0421414daa1ddb79b6af33f7b7773aa8f1db92cd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDaC6yLrmq6qSu0\nBfaY8gVFF6CnKiFDPJH4IvtfySncXHKuX04xoLE63b03DrPGcEZqsMkKa6S9Hop+\na5vfKmLRtICVSNIFXkRmUbSCl9mE1GGFNXlRM4z+1X8fBkQSt0u+yR0FN8JY1LYV\nS38vPOW6YHE1jc1CltKHgCvduQ0MEOcxbc0d3mNUTeoDnbmj6EcICaPa3m+w8zHk\n5EtLaNKsDFT5M+CqecRG9RDQi+up6c7jI8vAnw+j/WI8hfgJgnhkabtmb24fc8Zt\nSWuSz+skPScMhKi0KITgNKxwJeEJIzG2EZ8vGlBU4ydTA9PDWnHO0+v8Jq1I/LZY\nTanxHfHJAgMBAAECggEAJ8X6Xu5dXJgwNyHhVgvLp0tEjEmUkLGzRKqI5POKVb5t\nUt5ioo3X1k+NTMY7R8bCKYL+4Q46mh7Aj4fsglw2c180F0cVvFHyMyHTRgER9fdR\npJ1Y+FVpcjCahBu9/hX+VJpV11ZQ9qgyYJcJZ6H5m7Is5GJt3ygo1fusxMCVHy59\n4Q/oSQ5IcJ5vX3LM4ZXKUM7hxCSsvxtAuqXxl8jnVTv1GUtYxYrlCfTSChbDnJ5W\n5ZA2V7VD4QzcUufn5ctwQJXm6DSCTOEjzEmZdiwuqXYr95wNl+qioCsxFC1ZvNtj\nKTDL/ZOxJG+4Y8qAuF/xSnoRWzjqy9V9IJ7wgQUBKwKBgQD2QyExbA09V1ePKsn4\nH0q3Xrtdr2kkgN2oI8aqpNy30jvPs5bOgKgngmW7mFZdYjvGwVHFyRjP5B14P8Uy\nGY5XPUyB3fxvuxQ3TXWZ8B4z2c19wSWVO5WH+abiwquTcITwAaMgcPJIJoKZdzO2\nmaHftW0sZ04VRNaQILxC60NmmwKBgQDiqumMPqtqhEiOAj/3mlY7Q7t/UFtPPWdr\nimMfjFYCXv74564NH2LogOSbCyhAyIg2oAkKDE4OMIVKWNSg8H4Utd7uFlq4YTHK\n3JlEJ5Q4k/Hy5p2XaBSAh3otcKa6uFzQP7vqWn/8yS+M+vvthKz7XTPp8aEee745\ns7Ikf9+dawKBgQDkGRPCskGlIqSAgHKot1s+c6l6wkHSROaKmfCnGKM0RK+P19mE\nlpiqV9ahJx4/ywBxPZjfaT/pN3KwcejWWeOFHMsjsxjh6Nd1zfJyzn07K69xnpiQ\nHKuJUg1pFkVUALGxmOKe5t8TQ1BOk6G7rZvJGUPxEBK8EpHm19to5H7+pwKBgE9S\nzq6009pP9vAzm100Vs8gsgIpBftiGspIwM2ul/72bbZ/paqT/FIvoVEdA3ZAd2Le\neKtaiQpwMoVFNwwnfYgT6bNagV8bLIi40K5IR5fRNo/x4t60ntAoGTrDvKWFlX2P\ngFzQVRAK/CgTQYzqrHq/MEbDt8XqOjUJTON3GLOHAoGAZsoZ/au4aGsbO375iZ29\nL3b2BscaNXSfh1zbw+qsUxnHTVqh0QB/7mc2vGI3lr97KRXgFLufr+OFpW+TMbgh\n5GFSYl7EDwi6cVdiXf1ZhMTgd4BODQaJsjm4a5kEpvs4U7jEpcqkXb48jzgIx1TS\ntiwPBhIdF0Rdrc+ajSo8vWc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebasepython@iotsmartbabymonitoringcloud.iam.gserviceaccount.com",
+  "client_id": "108398922826351699193",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebasepython%40iotsmartbabymonitoringcloud.iam.gserviceaccount.com"
+}
