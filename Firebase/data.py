@@ -1,4 +1,9 @@
 import pyrebase
+import logging
+import logging.handlers
+import datetime
+import os
+import pathlib
 
 config = {
     "apiKey": "AIzaSyBLwvIEA9__jCTxCKBXJaeHjztbFtyTrfk",
@@ -11,21 +16,39 @@ config = {
 }
 firebase = pyrebase.initialize_app(config)
 
-# auth = firebase.auth()
-# authenticate a user
-# user = auth.sign_in_with_email_and_password("samyibrahim661@gmail.com", "iotTestUser")
-
 auth = firebase.auth()
 user = auth.sign_in_with_email_and_password("samyibrahim661@gmail.com", "iotTestUser")
 
 db = firebase.database()
-# print(db.child().get().val())
+
+timestampStr = datetime.datetime.now().strftime("%d-%b-%Y(%H:%M:%S)")
+
+
+def insertSensorData(temperature, isMicrophoneTriggered, isCameraTriggered):
+    info = {"temperature": temperature, "microphoneTriggered": isMicrophoneTriggered,
+            "cameraTriggered": isCameraTriggered}
+    db.child("SensorData").child(timestampStr).set(info, user['idToken'])
+    logging.info("Successfully Inserted Sensor Data into Database")
+
 
 def insertTest(name, age, height, weight):
-  data = {"name": name, "age": age, "height": height, "weight": weight}
-  db.child("users").child(name).set(data, user['idToken'])
-  print("Insert Successfull")
+    data = {"name": name, "age": age, "height": height, "weight": weight}
+    db.child("users").child(name).set(data, user['idToken'])
+    print("Insert Successfull")
+
+
+def initializeLog():
+    fileName = "iotSmartBaby_" + timestampStr + ".log"
+    pathlib.Path('./logs').mkdir(exist_ok=True)
+    filename = "logs\log_{}".format(fileName).replace(':', '.')
+    should_roll_over = os.path.isfile(filename)
+    handler = logging.handlers.RotatingFileHandler(filename, mode='w', backupCount=5)
+    if should_roll_over:  #skip if the log already exists (it shouldn't - error handling)
+        handler.doRollover()
+    logging.basicConfig(filename=filename, level=logging.INFO)
+    logging.info("LOG Iot Smart Baby Monitoring System - " + timestampStr)
 
 
 if __name__ == '__main__':
-  insertTest("Tri", "21", "170 cm", "80 kg")
+    initializeLog()
+    #insertSensorData("20", "1", "0")
