@@ -24,9 +24,9 @@ db = firebase.database()
 timestampStr = datetime.datetime.now().strftime("%d-%b-%Y(%H:%M:%S)")
 
 
-def insertSensorData(temperature, isMicrophoneTriggered, isCameraTriggered):
+def insertSensorData(temperature, isMicrophoneTriggered, isCameraTriggered, timestamp):
     info = {"temperature": temperature, "microphoneTriggered": isMicrophoneTriggered,
-            "cameraTriggered": isCameraTriggered}
+            "cameraTriggered": isCameraTriggered, "timestamp":timestamp}
     db.child("SensorData").child(timestampStr).set(info, user['idToken'])
     logging.info("Successfully Inserted Sensor Data into Database")
 
@@ -51,4 +51,4 @@ def initializeLog():
 
 if __name__ == '__main__':
     initializeLog()
-    #insertSensorData("20", "1", "0")
+    #insertSensorData("20", "1", "0", timestampStr)
