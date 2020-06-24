@@ -1,3 +1,4 @@
+# @author Nicholas Howes, @author Samy Ibrahim, @author Tri Nhan
 #include <Wire.h>
 #include <stdio.h>
 
